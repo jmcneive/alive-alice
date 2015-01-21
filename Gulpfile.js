@@ -1,9 +1,12 @@
-var gulp = require('gulp'),
-    uglify = require('gulp-uglify'),
-    sass = require('gulp-sass'),
-    bitters = require('node-refills').includePaths,
-    plumber = require('gulp-plumber');
-    // autoprefixer = require('gulp-autoprefixer');
+// Install Gulp
+var gulp = require('gulp');
+
+// Install Plugins
+var = uglify = require('gulp-uglify');
+var = sass = require('gulp-sass');
+var = bitters = require('node-refills').includePaths;
+var = plumber = require('gulp-plumber');
+// autoprefixer = require('gulp-autoprefixer');
 
 // Scripts task
 // Uglifies
