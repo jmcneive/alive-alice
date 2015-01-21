@@ -1,6 +1,24 @@
+/* Layout Styles */
+
+/*
+    00 - General
+    01 - Divs
+    02 - Sections
+    03 - Articles + Asides
+    04 - Navigation
+    05 - Header + Footer
+    06 - Headings + Titles
+*/
+
+
+/* 00 - General
+   html, body, etc. */
 body {
     background-color: white;
 }
+
+/* 01 - Divs
+   wrappers, containers, etc. */
 .alfie {
     background-color: dodgerblue;
 }
@@ -20,13 +38,16 @@ body {
   }
 }
 
-/* -------------- Copy */
+/* 03 - Articles + Asides */
+.wrapper__hero {
+    height: 100vh;
+}
+
+/* 06 - Headings + Titles */
 .home__greeting--copy {
     padding: 0 15%;
     text-align: center;
 }
-
-/* ---------- Headings */
 .wrapper__hero {
     h1.header__marquee {
     font-size: 30vmin;
@@ -40,9 +61,6 @@ h1.home__greeting, h2.home__greeting--sub {
 }
 
 /* ------------------------ Hero panel */
-.wrapper__hero {
-    height: 100vh;
-}
 .hero__wrapper--slide {
     height: 50vh;
     border: 1px dashed red;
