@@ -1,7 +1,7 @@
-article.type-system-serif {
-  $serif: 'Lusitana', serif;
-  $serif-2: 'Merriweather', serif;
-  $sans-serif: 'Merriweather Sans', sans-serif;
+article.type__system--robot {
+  $serif: 'Roboto', serif;
+  $serif-2: 'Roboto', serif;
+  $sans-serif: 'Roboto', sans-serif;
 
   @include clearfix;
   text-align: left;

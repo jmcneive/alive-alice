@@ -37,6 +37,9 @@ body {
     height: 15em;
   }
 }
+.grid__item {
+    height: 25em;
+}
 
 /* 03 - Articles + Asides */
 .wrapper__hero {
@@ -59,26 +62,32 @@ body {
 h1.home__greeting, h2.home__greeting--sub {
     text-align: center;
 }
+article.type__system--robot {
+    h1.title__card--logo {
+        border: 3px solid white;
+        border-radius: 50%;
+        display: block;
+        width: 9rem;
+        height: 9rem;
+        margin: 0 auto;
+        padding-top: .45em;
+        // font-size: 3em;
+        font-size: golden-ratio(36px, 1);
+        line-height: 1.5;
+        font-weight: 700;
+     }
+    h2.title__card--name {
+        top: 8rem;
+        font-size: golden-ratio(42px, 1);
+        letter-spacing: 4;
+        font-style: normal;
+    }
+}
 
 /* ------------------------ Hero panel */
 .hero__wrapper--slide {
     height: 50vh;
     border: 1px dashed red;
-}
-article.type__system--round {
-    h1.title__card--logo {
-        border: 3px solid white;
-        border-radius: 50%;
-        display: block;
-        width: 7rem;
-        height: 7rem;
-        margin: 0 auto;
-        padding-top: .5em;
-        // font-size: 3em;
-        font-size: golden-ratio(28px, 1);
-        line-height: 1.5;
-        font-weight: 700;
-     }
 }
 .title__card {
     text-align: center;
@@ -87,7 +96,7 @@ article.type__system--round {
 }
 .title__card--wrap {
     position: relative;
-    top: 15vmin;
+    top: 35vmin;
 }
 .title__card--wrap {
     .title__card--name {

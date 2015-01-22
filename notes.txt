@@ -1,0 +1,4 @@
+// Bourbon Overrides //
+
+refills/base/typography
+    55: remove <a> hover color

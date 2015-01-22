@@ -1,1 +1,25 @@
 extends templates/docwrapper
+
+block title
+    | Bourbon + F5 + Gulp
+
+block main
+    .wrapper__master
+      
+      //- include hero-default
+
+      include templates/curtain-nav
+
+      include templates/grid-wrapper
+
+      include templates/color-pal
+
+      // Site's type system
+      
+      include templates/type-system
+
+      // Site's user-experience elements
+      
+      include templates/ui-elements
+
+    // end .wrapper__master
