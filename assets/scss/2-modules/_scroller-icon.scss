@@ -2,22 +2,24 @@ body {
   background: #444;
 }
 .aniWrap {
+  position: relative;
+  top: 30em;
   margin: 40px auto;
   display: block;
   width: 28px;
-  @include media(min-width 320px max-width 480px, 6) {
+  @media #{$small-only} {
     display: none;
   }
-  @include media(min-width 481px max-width 880px, 8) {
+  @media #{$medium-up} {
     position: relative;
-    top: 20vh;
+    top: 25em;
   }
 }
 
 .mouse {
   width: 28px;
   height: 50px;
-  border: 2px solid black;
+  border: 2px solid white;
   border-radius: 14px;
 }
 
@@ -25,7 +27,7 @@ body {
   width: 4px;
   height: 4px;
   border-radius: 2px;
-  background: black;
+  background: white;
   position: relative;
   top: 10px;
   left: 10px;

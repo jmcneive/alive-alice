@@ -38,7 +38,13 @@ body {
   }
 }
 .grid__item {
-    height: 25em;
+    @media #{$small-only} {
+        height: 20em;
+    }
+    @media #{$medium-only} {
+        height: 15em;
+    }
+    height: 30em;
 }
 
 /* 03 - Articles + Asides */
@@ -55,7 +61,6 @@ body {
     h1.header__marquee {
     font-size: 30vmin;
     width: 60vw;
-    // text-transform: uppercase;
     color: $clr-gold;
     }
 }
@@ -77,7 +82,11 @@ article.type__system--robot {
         font-weight: 700;
      }
     h2.title__card--name {
-        top: 8rem;
+        top: 13rem;
+        @media #{$small-only} {
+            font-size: golden-ratio(22px, 1);
+            top: 10rem;
+        }
         font-size: golden-ratio(42px, 1);
         letter-spacing: 4;
         font-style: normal;
@@ -112,7 +121,6 @@ article.type__system--robot {
     display: inline-block;
     width: 10em;
     height: 3em;
-    // border: 1px solid red;
     margin: 2em;
     background: url('../img/logos/alv-rtn-wht-circle-name.svg')no-repeat center;
     background-size: contain;
@@ -123,3 +131,6 @@ article.type__system--robot {
     text-transform: uppercase;
     color: white;
 }
+
+
+

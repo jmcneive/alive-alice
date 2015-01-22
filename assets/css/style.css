@@ -427,7 +427,6 @@ p {
 /* line 50, /Users/jerrymcneive/Dropbox/Projects/Working MAMP Roots/GITREPO/alive-alice/assets/scss/0-plugins/refills/base/typography */
 a {
   transition: color 0.1s linear;
-  color: #477DCA;
   text-decoration: none; }
   /* line 59, /Users/jerrymcneive/Dropbox/Projects/Working MAMP Roots/GITREPO/alive-alice/assets/scss/0-plugins/refills/base/typography */
   a:active, a:focus {
@@ -6680,7 +6679,7 @@ select {
   margin-right: auto;
   margin-top: 0;
   margin-bottom: 0;
-  max-width: 90.625rem; }
+  max-width: 140.625rem; }
   /* line 172, /Users/jerrymcneive/Dropbox/Projects/Working MAMP Roots/GITREPO/alive-alice/assets/scss/0-plugins/F5-grid/global */
   .row:before, .row:after {
     content: " ";
@@ -8121,30 +8120,32 @@ body {
 
 /* line 4, /Users/jerrymcneive/Dropbox/Projects/Working MAMP Roots/GITREPO/alive-alice/assets/scss/2-modules/scroller-icon */
 .aniWrap {
+  position: relative;
+  top: 30em;
   margin: 40px auto;
   display: block;
   width: 28px; }
-  @media screen and (min-width: 320px) and (max-width: 480px) {
+  @media only screen and (max-width: 40em) {
     .aniWrap {
       display: none; } }
-  @media screen and (min-width: 481px) and (max-width: 880px) {
+  @media only screen and (min-width:40.063em) {
     .aniWrap {
       position: relative;
-      top: 20vh; } }
+      top: 25em; } }
 
-/* line 17, /Users/jerrymcneive/Dropbox/Projects/Working MAMP Roots/GITREPO/alive-alice/assets/scss/2-modules/scroller-icon */
+/* line 19, /Users/jerrymcneive/Dropbox/Projects/Working MAMP Roots/GITREPO/alive-alice/assets/scss/2-modules/scroller-icon */
 .mouse {
   width: 28px;
   height: 50px;
-  border: 2px solid black;
+  border: 2px solid white;
   border-radius: 14px; }
 
-/* line 24, /Users/jerrymcneive/Dropbox/Projects/Working MAMP Roots/GITREPO/alive-alice/assets/scss/2-modules/scroller-icon */
+/* line 26, /Users/jerrymcneive/Dropbox/Projects/Working MAMP Roots/GITREPO/alive-alice/assets/scss/2-modules/scroller-icon */
 .scroller {
   width: 4px;
   height: 4px;
   border-radius: 2px;
-  background: black;
+  background: white;
   position: relative;
   top: 10px;
   left: 10px;
@@ -8152,19 +8153,19 @@ body {
   /* Chrome, Safari, Opera */ }
 
 @-webkit-keyframes scrolls {
-  /* line 37, /Users/jerrymcneive/Dropbox/Projects/Working MAMP Roots/GITREPO/alive-alice/assets/scss/2-modules/scroller-icon */
+  /* line 39, /Users/jerrymcneive/Dropbox/Projects/Working MAMP Roots/GITREPO/alive-alice/assets/scss/2-modules/scroller-icon */
   0% {
     top: 10px;
     opacity: 1;
     height: 4px; }
 
-  /* line 38, /Users/jerrymcneive/Dropbox/Projects/Working MAMP Roots/GITREPO/alive-alice/assets/scss/2-modules/scroller-icon */
+  /* line 40, /Users/jerrymcneive/Dropbox/Projects/Working MAMP Roots/GITREPO/alive-alice/assets/scss/2-modules/scroller-icon */
   95% {
     top: 18px;
     opacity: 0;
     height: 10px; }
 
-  /* line 39, /Users/jerrymcneive/Dropbox/Projects/Working MAMP Roots/GITREPO/alive-alice/assets/scss/2-modules/scroller-icon */
+  /* line 41, /Users/jerrymcneive/Dropbox/Projects/Working MAMP Roots/GITREPO/alive-alice/assets/scss/2-modules/scroller-icon */
   100% {
     top: 8px;
     opacity: 1;
@@ -8193,7 +8194,7 @@ html, body {
 body {
   font-size: 100%;
   font-family: 'Ubuntu', sans-serif;
-  background-color: #2e2d32; }
+  background-color: #3e4b63; }
 
 /* line 106, /Users/jerrymcneive/Dropbox/Projects/Working MAMP Roots/GITREPO/alive-alice/assets/scss/2-modules/curtain-nav */
 a {
@@ -8228,7 +8229,7 @@ Main components
   position: relative;
   height: 100%;
   overflow: hidden;
-  background-color: #3a393f;
+  background-color: #485773;
   /* slightly visible only when we resize this element */
   box-shadow: 0 0 40px rgba(0, 0, 0, 0.8);
   z-index: 1;
@@ -8265,7 +8266,7 @@ Main components
     transform: translateX(-50%) translateY(-50%);
     text-align: center;
     font-weight: bold;
-    color: #ffffff; }
+    color: white; }
   /* line 183, /Users/jerrymcneive/Dropbox/Projects/Working MAMP Roots/GITREPO/alive-alice/assets/scss/2-modules/curtain-nav */
   .no-js #nav__curtain--intro {
     height: 640px; }
@@ -8278,13 +8279,13 @@ Main components
   width: 100%;
   height: 50px;
   z-index: 2;
-  background: rgba(58, 57, 63, 0.6);
+  background: #343f54;
   transition: background 0.2s; }
   @media only screen and (min-width: 768px) {
     .curtain__header {
       height: 80px; } }
 
-/* line 203, /Users/jerrymcneive/Dropbox/Projects/Working MAMP Roots/GITREPO/alive-alice/assets/scss/2-modules/curtain-nav */
+/* line 204, /Users/jerrymcneive/Dropbox/Projects/Working MAMP Roots/GITREPO/alive-alice/assets/scss/2-modules/curtain-nav */
 .curtain__bg--blurred {
   /* we use jQuery to apply a mask to this element - CSS clip property */
   position: absolute;
@@ -8296,18 +8297,18 @@ Main components
   background-size: cover;
   -webkit-filter: blur(4px);
   filter: blur(4px); }
-  /* line 215, /Users/jerrymcneive/Dropbox/Projects/Working MAMP Roots/GITREPO/alive-alice/assets/scss/2-modules/curtain-nav */
+  /* line 216, /Users/jerrymcneive/Dropbox/Projects/Working MAMP Roots/GITREPO/alive-alice/assets/scss/2-modules/curtain-nav */
   .no-js .curtain__bg--blurred {
     display: none; }
 
-/* line 220, /Users/jerrymcneive/Dropbox/Projects/Working MAMP Roots/GITREPO/alive-alice/assets/scss/2-modules/curtain-nav */
+/* line 221, /Users/jerrymcneive/Dropbox/Projects/Working MAMP Roots/GITREPO/alive-alice/assets/scss/2-modules/curtain-nav */
 #curtain__logo {
   position: absolute;
   left: 10px;
   top: 8px;
   width: 10em;
   height: 3em; }
-  /* line 228, /Users/jerrymcneive/Dropbox/Projects/Working MAMP Roots/GITREPO/alive-alice/assets/scss/2-modules/curtain-nav */
+  /* line 229, /Users/jerrymcneive/Dropbox/Projects/Working MAMP Roots/GITREPO/alive-alice/assets/scss/2-modules/curtain-nav */
   #curtain__logo img {
     display: block; }
   @media only screen and (min-width: 768px) {
@@ -8318,7 +8319,7 @@ Main components
     #curtain__logo {
       left: 60px; } }
 
-/* line 242, /Users/jerrymcneive/Dropbox/Projects/Working MAMP Roots/GITREPO/alive-alice/assets/scss/2-modules/curtain-nav */
+/* line 243, /Users/jerrymcneive/Dropbox/Projects/Working MAMP Roots/GITREPO/alive-alice/assets/scss/2-modules/curtain-nav */
 .curtain__menu--trigger {
   display: inline-block;
   position: absolute;
@@ -8331,20 +8332,20 @@ Main components
   font-weight: bold;
   font-size: 14px;
   font-size: 0.875rem; }
-  /* line 254, /Users/jerrymcneive/Dropbox/Projects/Working MAMP Roots/GITREPO/alive-alice/assets/scss/2-modules/curtain-nav */
+  /* line 255, /Users/jerrymcneive/Dropbox/Projects/Working MAMP Roots/GITREPO/alive-alice/assets/scss/2-modules/curtain-nav */
   .curtain__menu--trigger span {
     /* hamburger icon */
     position: relative;
     display: inline-block;
     width: 18px;
     height: 2px;
-    background-color: #ffffff;
+    background-color: #F5F5F5;
     vertical-align: middle;
     margin-left: 10px;
     -webkit-transform: translateY(-2px);
     -ms-transform: translateY(-2px);
     transform: translateY(-2px); }
-    /* line 265, /Users/jerrymcneive/Dropbox/Projects/Working MAMP Roots/GITREPO/alive-alice/assets/scss/2-modules/curtain-nav */
+    /* line 266, /Users/jerrymcneive/Dropbox/Projects/Working MAMP Roots/GITREPO/alive-alice/assets/scss/2-modules/curtain-nav */
     .curtain__menu--trigger span::before, .curtain__menu--trigger span::after {
       content: '';
       display: inline-block;
@@ -8354,17 +8355,17 @@ Main components
       height: 100%;
       background-color: inherit;
       transition: all 0.2s; }
-    /* line 277, /Users/jerrymcneive/Dropbox/Projects/Working MAMP Roots/GITREPO/alive-alice/assets/scss/2-modules/curtain-nav */
+    /* line 278, /Users/jerrymcneive/Dropbox/Projects/Working MAMP Roots/GITREPO/alive-alice/assets/scss/2-modules/curtain-nav */
     .curtain__menu--trigger span::before {
       top: -6px; }
-    /* line 281, /Users/jerrymcneive/Dropbox/Projects/Working MAMP Roots/GITREPO/alive-alice/assets/scss/2-modules/curtain-nav */
+    /* line 282, /Users/jerrymcneive/Dropbox/Projects/Working MAMP Roots/GITREPO/alive-alice/assets/scss/2-modules/curtain-nav */
     .curtain__menu--trigger span::after {
       bottom: -6px; }
-  /* line 286, /Users/jerrymcneive/Dropbox/Projects/Working MAMP Roots/GITREPO/alive-alice/assets/scss/2-modules/curtain-nav */
-  .no-touch .curtain__menu--trigger:hover span::before {
+  /* line 287, /Users/jerrymcneive/Dropbox/Projects/Working MAMP Roots/GITREPO/alive-alice/assets/scss/2-modules/curtain-nav */
+  .curtain__menu--trigger:hover span::before {
     top: -8px; }
-  /* line 290, /Users/jerrymcneive/Dropbox/Projects/Working MAMP Roots/GITREPO/alive-alice/assets/scss/2-modules/curtain-nav */
-  .no-touch .curtain__menu--trigger:hover span::after {
+  /* line 291, /Users/jerrymcneive/Dropbox/Projects/Working MAMP Roots/GITREPO/alive-alice/assets/scss/2-modules/curtain-nav */
+  .curtain__menu--trigger:hover span::after {
     bottom: -8px; }
   @media only screen and (min-width: 768px) {
     .curtain__menu--trigger {
@@ -8376,14 +8377,14 @@ Main components
     .curtain__menu--trigger {
       right: 60px; } }
 
-/* line 305, /Users/jerrymcneive/Dropbox/Projects/Working MAMP Roots/GITREPO/alive-alice/assets/scss/2-modules/curtain-nav */
+/* line 306, /Users/jerrymcneive/Dropbox/Projects/Working MAMP Roots/GITREPO/alive-alice/assets/scss/2-modules/curtain-nav */
 #nav__curtain--inner {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: #eeecf5;
+  background: #F5F5F5;
   /* Force Hardware Acceleration in WebKit */
   -webkit-transform: translateZ(0);
   -webkit-backface-visibility: hidden;
@@ -8395,24 +8396,24 @@ Main components
   transition-property: transform;
   transition-duration: 0.5s;
   z-index: 3; }
-  /* line 325, /Users/jerrymcneive/Dropbox/Projects/Working MAMP Roots/GITREPO/alive-alice/assets/scss/2-modules/curtain-nav */
+  /* line 326, /Users/jerrymcneive/Dropbox/Projects/Working MAMP Roots/GITREPO/alive-alice/assets/scss/2-modules/curtain-nav */
   #nav__curtain--inner ul {
     height: 100%; }
-  /* line 329, /Users/jerrymcneive/Dropbox/Projects/Working MAMP Roots/GITREPO/alive-alice/assets/scss/2-modules/curtain-nav */
+  /* line 330, /Users/jerrymcneive/Dropbox/Projects/Working MAMP Roots/GITREPO/alive-alice/assets/scss/2-modules/curtain-nav */
   #nav__curtain--inner li {
     height: 20%; }
-    /* line 332, /Users/jerrymcneive/Dropbox/Projects/Working MAMP Roots/GITREPO/alive-alice/assets/scss/2-modules/curtain-nav */
+    /* line 333, /Users/jerrymcneive/Dropbox/Projects/Working MAMP Roots/GITREPO/alive-alice/assets/scss/2-modules/curtain-nav */
     #nav__curtain--inner li a {
       position: relative;
       display: block;
       padding: 0 10%;
       height: 100%;
-      border-bottom: 1px solid #dfdbec;
-      color: #3a393f;
+      border-bottom: 1px solid #e8e8e8;
+      color: #485773;
       font-size: 20px;
       font-size: 1.25rem;
       font-weight: bold; }
-      /* line 342, /Users/jerrymcneive/Dropbox/Projects/Working MAMP Roots/GITREPO/alive-alice/assets/scss/2-modules/curtain-nav */
+      /* line 343, /Users/jerrymcneive/Dropbox/Projects/Working MAMP Roots/GITREPO/alive-alice/assets/scss/2-modules/curtain-nav */
       #nav__curtain--inner li a span {
         position: absolute;
         left: 50%;
@@ -8422,13 +8423,14 @@ Main components
         -webkit-transform: translateX(-50%) translateY(-50%);
         -ms-transform: translateX(-50%) translateY(-50%);
         transform: translateX(-50%) translateY(-50%); }
-      /* line 347, /Users/jerrymcneive/Dropbox/Projects/Working MAMP Roots/GITREPO/alive-alice/assets/scss/2-modules/curtain-nav */
-      .no-touch #nav__curtain--inner li a:hover {
-        background-color: #FFF; }
-    /* line 352, /Users/jerrymcneive/Dropbox/Projects/Working MAMP Roots/GITREPO/alive-alice/assets/scss/2-modules/curtain-nav */
+      /* line 348, /Users/jerrymcneive/Dropbox/Projects/Working MAMP Roots/GITREPO/alive-alice/assets/scss/2-modules/curtain-nav */
+      #nav__curtain--inner li a:hover {
+        background-color: #FFF;
+        cursor: pointer; }
+    /* line 354, /Users/jerrymcneive/Dropbox/Projects/Working MAMP Roots/GITREPO/alive-alice/assets/scss/2-modules/curtain-nav */
     #nav__curtain--inner li:last-child a {
       border-bottom: none; }
-  /* line 357, /Users/jerrymcneive/Dropbox/Projects/Working MAMP Roots/GITREPO/alive-alice/assets/scss/2-modules/curtain-nav */
+  /* line 359, /Users/jerrymcneive/Dropbox/Projects/Working MAMP Roots/GITREPO/alive-alice/assets/scss/2-modules/curtain-nav */
   #nav__curtain--inner .curtain__menu--close {
     position: absolute;
     top: 0;
@@ -8436,12 +8438,12 @@ Main components
     display: inline-block;
     width: 40px;
     height: 40px;
-    background-color: #d26c64;
+    background-color: #6495ED;
     /* image replacement */
     overflow: hidden;
     text-indent: 100%;
     white-space: nowrap; }
-    /* line 371, /Users/jerrymcneive/Dropbox/Projects/Working MAMP Roots/GITREPO/alive-alice/assets/scss/2-modules/curtain-nav */
+    /* line 373, /Users/jerrymcneive/Dropbox/Projects/Working MAMP Roots/GITREPO/alive-alice/assets/scss/2-modules/curtain-nav */
     #nav__curtain--inner .curtain__menu--close::before, #nav__curtain--inner .curtain__menu--close::after {
       content: '';
       display: inline-block;
@@ -8454,43 +8456,43 @@ Main components
       transition-property: -webkit-transform;
       transition-property: transform;
       transition-duration: 0.3s; }
-    /* line 385, /Users/jerrymcneive/Dropbox/Projects/Working MAMP Roots/GITREPO/alive-alice/assets/scss/2-modules/curtain-nav */
+    /* line 387, /Users/jerrymcneive/Dropbox/Projects/Working MAMP Roots/GITREPO/alive-alice/assets/scss/2-modules/curtain-nav */
     #nav__curtain--inner .curtain__menu--close::before {
       -webkit-transform: rotate(45deg);
       -ms-transform: rotate(45deg);
       transform: rotate(45deg); }
-    /* line 389, /Users/jerrymcneive/Dropbox/Projects/Working MAMP Roots/GITREPO/alive-alice/assets/scss/2-modules/curtain-nav */
+    /* line 391, /Users/jerrymcneive/Dropbox/Projects/Working MAMP Roots/GITREPO/alive-alice/assets/scss/2-modules/curtain-nav */
     #nav__curtain--inner .curtain__menu--close::after {
       -webkit-transform: rotate(135deg);
       -ms-transform: rotate(135deg);
       transform: rotate(135deg); }
-    /* line 394, /Users/jerrymcneive/Dropbox/Projects/Working MAMP Roots/GITREPO/alive-alice/assets/scss/2-modules/curtain-nav */
-    .no-touch #nav__curtain--inner .curtain__menu--close:hover::before {
+    /* line 396, /Users/jerrymcneive/Dropbox/Projects/Working MAMP Roots/GITREPO/alive-alice/assets/scss/2-modules/curtain-nav */
+    #nav__curtain--inner .curtain__menu--close:hover::before {
       -webkit-transform: rotate(225deg);
       -ms-transform: rotate(225deg);
       transform: rotate(225deg); }
-    /* line 398, /Users/jerrymcneive/Dropbox/Projects/Working MAMP Roots/GITREPO/alive-alice/assets/scss/2-modules/curtain-nav */
-    .no-touch #nav__curtain--inner .curtain__menu--close:hover::after {
+    /* line 400, /Users/jerrymcneive/Dropbox/Projects/Working MAMP Roots/GITREPO/alive-alice/assets/scss/2-modules/curtain-nav */
+    #nav__curtain--inner .curtain__menu--close:hover::after {
       -webkit-transform: rotate(315deg);
       -ms-transform: rotate(315deg);
       transform: rotate(315deg); }
-  /* line 404, /Users/jerrymcneive/Dropbox/Projects/Working MAMP Roots/GITREPO/alive-alice/assets/scss/2-modules/curtain-nav */
+  /* line 406, /Users/jerrymcneive/Dropbox/Projects/Working MAMP Roots/GITREPO/alive-alice/assets/scss/2-modules/curtain-nav */
   #nav__curtain--inner.is-visible {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
     -webkit-transform: translateY(0);
     -ms-transform: translateY(0);
     transform: translateY(0); }
-  /* line 409, /Users/jerrymcneive/Dropbox/Projects/Working MAMP Roots/GITREPO/alive-alice/assets/scss/2-modules/curtain-nav */
+  /* line 411, /Users/jerrymcneive/Dropbox/Projects/Working MAMP Roots/GITREPO/alive-alice/assets/scss/2-modules/curtain-nav */
   .no-js #nav__curtain--inner {
     position: static;
     -webkit-transform: translateY(0);
     -ms-transform: translateY(0);
     transform: translateY(0); }
-    /* line 413, /Users/jerrymcneive/Dropbox/Projects/Working MAMP Roots/GITREPO/alive-alice/assets/scss/2-modules/curtain-nav */
+    /* line 415, /Users/jerrymcneive/Dropbox/Projects/Working MAMP Roots/GITREPO/alive-alice/assets/scss/2-modules/curtain-nav */
     .no-js #nav__curtain--inner .curtain__menu--close {
       display: none; }
 
-/* line 419, /Users/jerrymcneive/Dropbox/Projects/Working MAMP Roots/GITREPO/alive-alice/assets/scss/2-modules/curtain-nav */
+/* line 421, /Users/jerrymcneive/Dropbox/Projects/Working MAMP Roots/GITREPO/alive-alice/assets/scss/2-modules/curtain-nav */
 .curtain__layer--shadow {
   position: fixed;
   top: 0;
@@ -8502,7 +8504,7 @@ Main components
   opacity: 0;
   visibility: hidden;
   transition: visibility 0s 0.5s, opacity 0.5s 0s; }
-  /* line 432, /Users/jerrymcneive/Dropbox/Projects/Working MAMP Roots/GITREPO/alive-alice/assets/scss/2-modules/curtain-nav */
+  /* line 434, /Users/jerrymcneive/Dropbox/Projects/Working MAMP Roots/GITREPO/alive-alice/assets/scss/2-modules/curtain-nav */
   .curtain__layer--shadow.is-visible {
     opacity: 1;
     visibility: visible;
@@ -8787,30 +8789,36 @@ body {
 
 /* line 40, /Users/jerrymcneive/Dropbox/Projects/Working MAMP Roots/GITREPO/alive-alice/assets/scss/3-layouts/home */
 .grid__item {
-  height: 25em; }
+  height: 30em; }
+  @media only screen and (max-width: 40em) {
+    .grid__item {
+      height: 20em; } }
+  @media only screen and (min-width:40.063em) and (max-width:64em) {
+    .grid__item {
+      height: 15em; } }
 
 /* 03 - Articles + Asides */
-/* line 45, /Users/jerrymcneive/Dropbox/Projects/Working MAMP Roots/GITREPO/alive-alice/assets/scss/3-layouts/home */
+/* line 51, /Users/jerrymcneive/Dropbox/Projects/Working MAMP Roots/GITREPO/alive-alice/assets/scss/3-layouts/home */
 .wrapper__hero {
   height: 100vh; }
 
 /* 06 - Headings + Titles */
-/* line 50, /Users/jerrymcneive/Dropbox/Projects/Working MAMP Roots/GITREPO/alive-alice/assets/scss/3-layouts/home */
+/* line 56, /Users/jerrymcneive/Dropbox/Projects/Working MAMP Roots/GITREPO/alive-alice/assets/scss/3-layouts/home */
 .home__greeting--copy {
   padding: 0 15%;
   text-align: center; }
 
-/* line 55, /Users/jerrymcneive/Dropbox/Projects/Working MAMP Roots/GITREPO/alive-alice/assets/scss/3-layouts/home */
+/* line 61, /Users/jerrymcneive/Dropbox/Projects/Working MAMP Roots/GITREPO/alive-alice/assets/scss/3-layouts/home */
 .wrapper__hero h1.header__marquee {
   font-size: 30vmin;
   width: 60vw;
   color: gold; }
 
-/* line 62, /Users/jerrymcneive/Dropbox/Projects/Working MAMP Roots/GITREPO/alive-alice/assets/scss/3-layouts/home */
+/* line 67, /Users/jerrymcneive/Dropbox/Projects/Working MAMP Roots/GITREPO/alive-alice/assets/scss/3-layouts/home */
 h1.home__greeting, h2.home__greeting--sub {
   text-align: center; }
 
-/* line 66, /Users/jerrymcneive/Dropbox/Projects/Working MAMP Roots/GITREPO/alive-alice/assets/scss/3-layouts/home */
+/* line 71, /Users/jerrymcneive/Dropbox/Projects/Working MAMP Roots/GITREPO/alive-alice/assets/scss/3-layouts/home */
 article.type__system--robot h1.title__card--logo {
   border: 3px solid white;
   border-radius: 50%;
@@ -8822,31 +8830,35 @@ article.type__system--robot h1.title__card--logo {
   font-size: 58.248px;
   line-height: 1.5;
   font-weight: 700; }
-/* line 79, /Users/jerrymcneive/Dropbox/Projects/Working MAMP Roots/GITREPO/alive-alice/assets/scss/3-layouts/home */
+/* line 84, /Users/jerrymcneive/Dropbox/Projects/Working MAMP Roots/GITREPO/alive-alice/assets/scss/3-layouts/home */
 article.type__system--robot h2.title__card--name {
-  top: 8rem;
+  top: 13rem;
   font-size: 67.956px;
   letter-spacing: 4;
   font-style: normal; }
+  @media only screen and (max-width: 40em) {
+    article.type__system--robot h2.title__card--name {
+      font-size: 35.596px;
+      top: 10rem; } }
 
 /* ------------------------ Hero panel */
-/* line 88, /Users/jerrymcneive/Dropbox/Projects/Working MAMP Roots/GITREPO/alive-alice/assets/scss/3-layouts/home */
+/* line 97, /Users/jerrymcneive/Dropbox/Projects/Working MAMP Roots/GITREPO/alive-alice/assets/scss/3-layouts/home */
 .hero__wrapper--slide {
   height: 50vh;
   border: 1px dashed red; }
 
-/* line 92, /Users/jerrymcneive/Dropbox/Projects/Working MAMP Roots/GITREPO/alive-alice/assets/scss/3-layouts/home */
+/* line 101, /Users/jerrymcneive/Dropbox/Projects/Working MAMP Roots/GITREPO/alive-alice/assets/scss/3-layouts/home */
 .title__card {
   text-align: center;
   position: relative;
   color: white; }
 
-/* line 97, /Users/jerrymcneive/Dropbox/Projects/Working MAMP Roots/GITREPO/alive-alice/assets/scss/3-layouts/home */
+/* line 106, /Users/jerrymcneive/Dropbox/Projects/Working MAMP Roots/GITREPO/alive-alice/assets/scss/3-layouts/home */
 .title__card--wrap {
   position: relative;
   top: 35vmin; }
 
-/* line 102, /Users/jerrymcneive/Dropbox/Projects/Working MAMP Roots/GITREPO/alive-alice/assets/scss/3-layouts/home */
+/* line 111, /Users/jerrymcneive/Dropbox/Projects/Working MAMP Roots/GITREPO/alive-alice/assets/scss/3-layouts/home */
 .title__card--wrap .title__card--name {
   text-transform: uppercase;
   margin: 1.5rem 0;
@@ -8854,7 +8866,7 @@ article.type__system--robot h2.title__card--name {
   font-weight: 700; }
 
 /* ------- Hero logo --- */
-/* line 111, /Users/jerrymcneive/Dropbox/Projects/Working MAMP Roots/GITREPO/alive-alice/assets/scss/3-layouts/home */
+/* line 120, /Users/jerrymcneive/Dropbox/Projects/Working MAMP Roots/GITREPO/alive-alice/assets/scss/3-layouts/home */
 .hero__title--logo {
   display: inline-block;
   width: 10em;
@@ -8863,7 +8875,7 @@ article.type__system--robot h2.title__card--name {
   background: url('../img/logos/alv-rtn-wht-circle-name.svg') no-repeat center;
   background-size: contain; }
 
-/* line 120, /Users/jerrymcneive/Dropbox/Projects/Working MAMP Roots/GITREPO/alive-alice/assets/scss/3-layouts/home */
+/* line 128, /Users/jerrymcneive/Dropbox/Projects/Working MAMP Roots/GITREPO/alive-alice/assets/scss/3-layouts/home */
 .hero__title--name {
   display: inline-block;
   margin: 0;

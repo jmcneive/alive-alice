@@ -1,9 +1,9 @@
 
 // variables - colors
 
-$color-1: #3a393f; // dark purple 
-$color-2: #eeecf5; // light purple
-$color-3: #d26c64; // red
+$color-1: #485773; // dark purple 
+$color-2: #6495ed; // light purple
+$color-3: #b0e0e6; // red
 $color-4: #ffffff; // white
 $background: darken($color-1, 5%); // body background color - visible when main element scales down
 
@@ -171,7 +171,7 @@ Main components
         text-align: center;
         // @include font-size(18px);
         font-weight: bold;
-        color: $color-4;
+        color: white;
     }
 
     @include MQ(M) {
@@ -192,7 +192,8 @@ Main components
     width: 100%;
     height: 50px;
     z-index: 2;
-    background: rgba($color-1, .6);
+    // background: rgba($color-1, .8);
+    background: darken( $palette-primary, 10% );
     @include transition(background .2s);
 
     @include MQ(M) {
@@ -257,7 +258,7 @@ Main components
         display: inline-block;
         width: 18px;
         height: 2px;
-        background-color: $color-4;
+        background-color: $palette-tertiary;
         vertical-align: middle;
         margin-left: 10px;
         @include transform(translateY(-2px));
@@ -283,11 +284,11 @@ Main components
         }
     }
 
-    .no-touch &:hover span::before {
+    &:hover span::before {
         top: -8px;
     }
 
-    .no-touch &:hover span::after {
+    &:hover span::after {
         bottom: -8px;
     }
 
@@ -308,7 +309,7 @@ Main components
     left: 0;
     width: 100%;
     height: 100%;
-    background: $color-2;
+    background: $palette-tertiary;
 
     /* Force Hardware Acceleration in WebKit */
     -webkit-transform: translateZ(0);
@@ -334,8 +335,8 @@ Main components
             display: block;
             padding: 0 10%;
             height: 100%;
-            border-bottom: 1px solid darken($color-2, 5%);
-            color: $color-1;
+            border-bottom: 1px solid darken($palette-tertiary, 5%);
+            color: $palette-primary;
             @include font-size(20px);
             font-weight: bold;
 
@@ -344,8 +345,9 @@ Main components
                 @include center; 
             }
 
-            .no-touch &:hover {
+            &:hover {
                 background-color: #FFF;
+                cursor: pointer;
             }
         }
 
@@ -361,7 +363,7 @@ Main components
         display: inline-block;
         width: 40px;
         height: 40px;
-        background-color: $color-3;
+        background-color: $palette-secondary;
 
         /* image replacement */
         overflow: hidden;
@@ -378,7 +380,7 @@ Main components
             height: 3px;
             background-color: #FFF;
 
-            @include transition-property (transform);
+            @include transition-property(transform);
             @include transition-duration(.3s);
         }
 
@@ -390,7 +392,7 @@ Main components
             @include transform(rotate(135deg));
         }
 
-        .no-touch &:hover {
+        &:hover {
             &::before {
                 @include transform(rotate(225deg));
             }
