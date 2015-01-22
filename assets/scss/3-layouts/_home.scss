@@ -52,6 +52,39 @@ body {
     height: 100vh;
 }
 
+/* 05 - Header + Footer */
+div.wrapper__footer {
+    img.logo__footer {
+        margin: 2em auto;
+        display: block;
+    }
+    h2.title__footer {
+        text-align: center;
+        font-size: 1vw;
+        font-weight: 400;
+        margin: 1em auto;
+        @media #{$small-only} {
+            font-size: 4vw;
+        }
+        @media #{$medium-only} {
+            font-size: 2vw;
+        }
+    }
+}
+ul.wrapper__social {
+    width: 100%;
+    margin: 5em 0 1em 0;
+    height: 2em;
+    li {
+        padding: 2em;
+        display: inline;
+        @media #{$small-only} {
+            font-size: 4vw;
+            text-align: center;
+        }
+    }
+}
+
 /* 06 - Headings + Titles */
 .home__greeting--copy {
     padding: 0 15%;
@@ -76,7 +109,6 @@ article.type__system--robot {
         height: 9rem;
         margin: 0 auto;
         padding-top: .45em;
-        // font-size: 3em;
         font-size: golden-ratio(36px, 1);
         line-height: 1.5;
         font-weight: 700;
@@ -130,6 +162,38 @@ article.type__system--robot {
     margin: 0;
     text-transform: uppercase;
     color: white;
+}
+
+div.grid__item {
+    article.title__card--wrap {
+        top: 10vmin;
+        @media #{$small-only} {
+            top: 16vmin;
+        }
+    }
+    h1.title__card--logo {
+        @media #{$small-only} {
+            font-size: golden-ratio(30px, 1);
+            width: 7rem;
+            height: 7rem;
+            padding-top: 0.35em;
+        }
+        @media #{$medium-only} {
+            font-size: golden-ratio(22px, 1);
+            width: 5rem;
+            height: 5rem;
+        }
+    }
+    h2.title__card--name {
+        top: 0;
+        font-size: 3vw;
+        @media #{$small-only} {
+            font-size: golden-ratio(16px, 1);
+        }
+        @media #{$medium-only} {
+            font-size: golden-ratio(28px, 1);
+        }
+    }
 }
 
 

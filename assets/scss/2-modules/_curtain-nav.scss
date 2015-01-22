@@ -225,6 +225,10 @@ Main components
 
     width: 10em;
     height: 3em;
+    @media #{$small-only} {
+        width: 8em;
+        top: 9px;
+    }
 
     img {
         display: block;

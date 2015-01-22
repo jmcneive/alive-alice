@@ -2,3 +2,6 @@
 
 refills/base/typography
     55: remove <a> hover color
+
+refills/refills/footer
+    7: footer bg
