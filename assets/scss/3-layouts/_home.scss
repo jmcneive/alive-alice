@@ -75,8 +75,9 @@ ul.wrapper__social {
     width: 100%;
     margin: 5em 0 1em 0;
     height: 2em;
+    text-align: center;
     li {
-        padding: 2em;
+        padding: 1vw;
         display: inline;
         @media #{$small-only} {
             font-size: 4vw;
@@ -182,6 +183,7 @@ div.grid__item {
             font-size: golden-ratio(22px, 1);
             width: 5rem;
             height: 5rem;
+            padding-top: 0.3em;
         }
     }
     h2.title__card--name {
@@ -191,7 +193,7 @@ div.grid__item {
             font-size: golden-ratio(16px, 1);
         }
         @media #{$medium-only} {
-            font-size: golden-ratio(28px, 1);
+            font-size: golden-ratio(10px, 1);
         }
     }
 }

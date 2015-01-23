@@ -5,3 +5,8 @@ refills/base/typography
 
 refills/refills/footer
     7: footer bg
+
+// General Notes //
+
+* center <li> elements by using text-align:center on the <ul> parent.
+* remove .no-touch class from css transition elements.

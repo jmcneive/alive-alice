@@ -1,0 +1,36 @@
+#wrapper__nav--curtain {
+    height: 50%;
+}
+div.wrapper__content {
+    .title__pages--excerpt {
+        text-transform: uppercase;
+        padding: 2em .5em 1em .5em;
+        font-size: golden-ratio(16px, 1);
+    }
+    .copy__pages {
+        padding: 1em;
+        font-size: golden-ratio(11px, 1);
+    }
+    .title__prop {
+        font-size: golden-ratio(14px, 1);
+        font-style: normal;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-align: center;
+        color: white;
+        line-height: 4;
+        letter-spacing: 2;
+    }
+}
+.one {
+    background: black;
+    height: 6em;
+}
+.two {
+    background: teal;
+    height: 20em;
+}
+.three {
+    background: red;
+    height: 40em;    
+}

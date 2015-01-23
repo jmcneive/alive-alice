@@ -1,27 +1,19 @@
-extends templates/docwrapper
+extends templates/docwrapper-home
 
 block title
     | Bourbon + F5 + Gulp
 
-block main
-    .wrapper__master
-      
-      //- include hero-default
+block style
+    link(rel='stylesheet', href='assets/css/style.css')
 
-      include templates/curtain-nav
+block title__logo
+  | PM
 
-      include templates/grid-wrapper
+block title__name
+  | The Peacemaker
 
-      include templates/footer
+block grid
+  include templates/grid-wrapper
 
-      include templates/color-pal
-
-      // Site's type system
-      
-      include templates/type-system
-
-      // Site's user-experience elements
-      
-      include templates/ui-elements
-
-    // end .wrapper__master
+block footer
+  include templates/footer

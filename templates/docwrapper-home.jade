@@ -3,9 +3,11 @@ head
     meta(charset='UTF-8')
     |     
     title
-        block title 
+        block title
+            title Default Title
     // Stylesheets
-    link(rel='stylesheet', href='assets/css/style.css')
+    rel
+        block style
     // Font Library
     link(href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,800,700,600,300', rel='stylesheet', type='text/css')
     |     
@@ -17,6 +19,53 @@ head
   body
 
     block main
+
+        main#wrapper__nav--curtain
+          section#nav__curtain--intro.bg-food-1
+              article.title__card--wrap.type__system--robot
+                  h1.title__card.title__card--logo 
+                    block title__logo
+                      h1              
+                  h2.title__card.title__card--name
+                    block title__name
+                      h2
+                  div.aniWrap
+                    div.mouse
+                      div.scroller
+              header.curtain__header
+                div#curtain__logo
+                  a(href='#0')
+                    img(src='assets/img/logos/alv-rtn-wht-circle-name.svg' alt='Logo')
+                a.curtain__menu--trigger(href='.nav__curtain--inner')
+                  | Menu
+                  span
+              div.curtain__bg--blurred
+        div.curtain__layer--shadow
+        nav#nav__curtain--inner
+          ul
+            li
+              a(href='#0')
+                span Home
+            li
+              a(href='#0')
+                span Dinner
+            li
+              a(href='#0')
+                span Brunch
+            li
+              a(href='#0')
+                span Cocktails
+            li
+              a(href='#0')
+                span Coffee
+          a.curtain__menu--close(href='#0') Close
+
+        block grid
+
+
+    block footer
+
+
 
     // Scripts
     block bottom-script

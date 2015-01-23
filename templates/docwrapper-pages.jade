@@ -1,0 +1,89 @@
+doctype html(lang='en')
+head
+    meta(charset='UTF-8')
+    |     
+    title
+        block title
+            title Default Title
+    // Stylesheets
+    rel
+        block style
+    // Font Library
+    link(href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,800,700,600,300', rel='stylesheet', type='text/css')
+    |     
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,400italic,300' rel='stylesheet' type='text/css'>
+    |     
+    link(href='http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic', rel='stylesheet', type='text/css')
+    |     
+    link(href='http://fonts.googleapis.com/css?family=Titillium+Web:400,400italic,600italic,600,700,700italic,900,300italic,300,200italic,200', rel='stylesheet', type='text/css')
+  body.pages
+
+    block main
+
+        main#wrapper__nav--curtain
+          section#nav__curtain--intro.bg-food-1
+              article.title__card--wrap.type__system--robot
+              header.curtain__header
+                div#curtain__logo
+                  a(href='#0')
+                    img(src='assets/img/logos/alv-rtn-wht-circle-name.svg' alt='Logo')
+                a.curtain__menu--trigger(href='.nav__curtain--inner')
+                  | Menu
+                  span
+              div.curtain__bg--blurred
+        div.curtain__layer--shadow
+        nav#nav__curtain--inner
+          ul
+            li
+              a(href='#0')
+                span Home
+            li
+              a(href='#0')
+                span Dinner
+            li
+              a(href='#0')
+                span Brunch
+            li
+              a(href='#0')
+                span Cocktails
+            li
+              a(href='#0')
+                span Coffee
+          a.curtain__menu--close(href='#0') Close
+
+        div.wrapper.wrapper__content
+          div.row
+            section.small-12.medium-8.columns.type__system--robot
+                h1.title__pages--excerpt
+                  block excerpt__prop
+                    h1
+                p.copy__pages
+                  block copy__prop
+                    p
+                div.row.pages__share
+
+            section.small-12.medium-4.large-3.columns.type__system--robot
+                .row
+                    .small-12.columns.one
+                      h2.title__prop
+                        block title__prop
+                .row
+                    .small-12.columns.two
+                .row
+                    .small-12.columns.three
+
+
+    // Scripts
+    block bottom-script
+        script(src='https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js')
+        script(src='assets/js/curtain-nav.js')
+        //- TODO : Google Analytics: change UA-XXXXX-X to be your site\'s ID.
+        script.
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='https://www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X');ga('send','pageview');
+
+
