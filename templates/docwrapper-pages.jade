@@ -6,6 +6,7 @@ head
         block title
             title Default Title
     // Stylesheets
+    link(href='assets/css/font-awesome.min.css', rel='stylesheet' type='text/css')
     rel
         block style
     // Font Library
@@ -53,7 +54,30 @@ head
 
         div.wrapper.wrapper__content
           div.row
-            section.small-12.medium-8.columns.type__system--robot
+            section.small-12.medium-4.columns.type__system--robot
+                .row
+                    .small-12.columns.one
+                      h2.title__prop
+                        block title__prop
+                div.row
+                    .small-12.columns.two.pages__contact
+                      i.fa.fa-home.fa-2x &nbsp&nbsp1831 Sydney St.
+                      </br>
+                      i.fa.fa-phone.fa-2x &nbsp&nbsp&nbsp314.543.8579
+                      </br>
+                      i.fa.fa-cloud.fa-2x &nbsp&nbspthepeacemaker.com
+                      </br>
+                      .row.pages__social
+                        section.small-6.columns
+                          i.fa.fa-instagram.fa-2x.fa-social&nbsp&nbspINSTAGRAM
+                          </br>
+                          i.fa.fa-facebook.fa-2x.fa-social&nbsp&nbsp&nbspFACEBOOK
+                          </br>
+                          i.fa.fa-twitter.fa-2x.fa-social&nbsp&nbspTWITTER
+                          </br>
+                .row
+                    .small-12.columns.three
+            section.small-12.medium-8.columns.wrapper__copy.type__system--robot
                 h1.title__pages--excerpt
                   block excerpt__prop
                     h1
@@ -61,16 +85,13 @@ head
                   block copy__prop
                     p
                 div.row.pages__share
+                  section.small-3.columns
+                    i.fa.fa-heart-o.fa-2x &nbsp&nbspLIKE
+                    </br>
+                    i.fa.fa-share.fa-2x &nbsp&nbspSHARE
 
-            section.small-12.medium-4.large-3.columns.type__system--robot
-                .row
-                    .small-12.columns.one
-                      h2.title__prop
-                        block title__prop
-                .row
-                    .small-12.columns.two
-                .row
-                    .small-12.columns.three
+
+      block footer
 
 
     // Scripts

@@ -1,14 +1,19 @@
-#wrapper__nav--curtain {
-    height: 50%;
+body.pages {
+    #wrapper__nav--curtain {
+        height: 50%;
+    }
+    footer {
+        padding: 0 0 2em 0;
+    }
 }
 div.wrapper__content {
     .title__pages--excerpt {
         text-transform: uppercase;
-        padding: 2em .5em 1em .5em;
+        padding: 2em .5em 1em 0;
         font-size: golden-ratio(16px, 1);
     }
     .copy__pages {
-        padding: 1em;
+        padding: 1em 1em 1em 0;
         font-size: golden-ratio(11px, 1);
     }
     .title__prop {
@@ -21,16 +26,33 @@ div.wrapper__content {
         line-height: 4;
         letter-spacing: 2;
     }
+    i.fa-home, i.fa-phone, i.fa-cloud, i.fa-facebook, i.fa-instagram, i.fa-twitter, i.fa-heart-o, i.fa-share {
+        color: black;
+        font-size: golden-ratio(10px, 1);
+        @media #{$medium-only} {
+            font-size: golden-ratio(8px, 1);
+        }
+        letter-spacing: 3;
+        text-transform: uppercase;
+        padding: 1em 0;
+    }
+    .pages__social {
+        // margin-top: 1vh;
+    }
+    .wrapper__copy {
+        padding: 2em;
+    }
 }
 .one {
     background: black;
     height: 6em;
 }
 .two {
-    background: teal;
-    height: 20em;
+    background: white;
+    height: 18em;
 }
 .three {
-    background: red;
+    background: url('../img/bg/pm_map.png')no-repeat center;
+    background-size: cover;
     height: 40em;    
 }

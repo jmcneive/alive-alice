@@ -54,6 +54,7 @@ body {
 
 /* 05 - Header + Footer */
 div.wrapper__footer {
+    border-top: 1px solid lighten(black, 40%);
     img.logo__footer {
         margin: 2em auto;
         display: block;
