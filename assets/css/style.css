@@ -10531,7 +10531,7 @@ Main components
         transform: translateX(-50%) translateY(-50%); }
       /* line 351, /Users/jerrymcneive/Dropbox/Projects/Working MAMP Roots/GITREPO/alive-alice/assets/scss/2-modules/curtain-nav */
       #nav__curtain--inner li a:hover {
-        background-color: #FFF;
+        background-color: #B0E0E6;
         cursor: pointer; }
     /* line 357, /Users/jerrymcneive/Dropbox/Projects/Working MAMP Roots/GITREPO/alive-alice/assets/scss/2-modules/curtain-nav */
     #nav__curtain--inner li:last-child a {

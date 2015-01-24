@@ -22,16 +22,7 @@ head
     block main
 
         main#wrapper__nav--curtain
-          section#nav__curtain--intro.bg-food-1
-              article.title__card--wrap.type__system--robot
-              header.curtain__header
-                div#curtain__logo
-                  a(href='#0')
-                    img(src='assets/img/logos/alv-rtn-wht-circle-name.svg' alt='Logo')
-                a.curtain__menu--trigger(href='.nav__curtain--inner')
-                  | Menu
-                  span
-              div.curtain__bg--blurred
+          block curtain
         div.curtain__layer--shadow
         nav#nav__curtain--inner
           ul
@@ -61,11 +52,13 @@ head
                         block title__prop
                 div.row
                     .small-12.columns.two.pages__contact
-                      i.fa.fa-home.fa-2x &nbsp&nbsp1831 Sydney St.
+                      i.fa.fa-home.fa-2x 
+                        block address
                       </br>
                       i.fa.fa-phone.fa-2x &nbsp&nbsp&nbsp314.543.8579
                       </br>
-                      i.fa.fa-cloud.fa-2x &nbsp&nbspthepeacemaker.com
+                      i.fa.fa-cloud.fa-2x
+                        block website
                       </br>
                       .row.pages__social
                         section.small-6.columns

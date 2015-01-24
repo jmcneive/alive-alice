@@ -349,7 +349,7 @@ Main components
             }
 
             &:hover {
-                background-color: #FFF;
+                background-color: $palette-alert;
                 cursor: pointer;
             }
         }
